@@ -6,6 +6,7 @@ import busy from '../assets/icon-busy.svg'
 
 export const InfoCard = ({ employee }) => {
 
+    console.log(employee);
    // TODO: parse phone numbers to a unified format
    // TODO: CSS changes when less than 4 searches appear
   

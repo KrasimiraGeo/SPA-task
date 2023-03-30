@@ -12,7 +12,7 @@ const [employees, setEmployees] = useState(data)
 
 const [searchQuery, setSearchQuery] = useState('')
 
-// filtering trough the visible infpormation about each employee
+// filtering through the visible information about each employee
 const filteredEmployees = employees.filter((employee) =>
 employee.firstName.toLowerCase().includes(searchQuery.toLowerCase()) ||
 employee.lastName.toLowerCase().includes(searchQuery.toLowerCase()) ||
