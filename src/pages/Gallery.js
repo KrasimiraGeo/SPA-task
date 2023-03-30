@@ -1,23 +1,20 @@
-import { Fragment, useEffect, useState } from "react"
-import { InfoCard } from "../components/InfoCard";
-
-import data from '../assets/api.json'
+import { Fragment} from "react"
+import { InfoCard } from "../components/InfoCard"
 import classes from './Gallery.module.css'
 
-export const Gallery = () => {
-// store data in a state
-    const [employees, setEmployees] = useState(data)
+export const Gallery = ({employees}) => {
 
-    
-    // map the state data
-    //filter the state data based on search input
+    //employees are passed from the App component
+    // map the state data and render each employee inside a card
 
     return (
         <Fragment>
+            <div className={classes.wrapper}>
             <div className={classes["card-container"]}>
                 {employees.map((employee) => (
                     <InfoCard key={employee.email} employee={employee} />
                 ))}
+            </div>
             </div>
         </Fragment>
     )

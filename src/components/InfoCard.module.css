@@ -17,7 +17,7 @@
 }
 
 
-/* resizing the container on hover to stop the image from overflowing*/
+/* resizing the container on hover to stop the image from overflowing */
 .card:hover .image-container {
   object-fit: cover;
   height: 50%;
@@ -27,10 +27,6 @@
   overflow:hidden;
 }
 
-.card:hover .image-container::before{
-  transform: translateY(0%);
-}
-
 .image-container {
   position: relative;
   height: 200px;
@@ -38,18 +34,6 @@
   padding-top: 15px;
   transition: transform 0.5s ease;
   overflow: hidden;
-}
-
-.image-container:before{
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 10px;
-  background-color: white;
-  transition: transform 0.5s ease;
-  transform: translateY(100%);
 }
 
 .image-container img {
@@ -68,8 +52,6 @@
   transform: translate(-10%, -10%);
 }
 
-
-/* Add some padding inside the card container */
 .container,
 .container-hidden {
   padding: 0px 10px;
@@ -79,7 +61,7 @@
   transition: transform 0.5s ease;
 }
 
-/* move the container up on hover to make space for the hidden one*/
+/* move the container up on hover to make space for the hidden one to appear */
 .card:hover .container {
   position: relative;
   top: -5%;
@@ -106,6 +88,7 @@
   font-weight: 400;
 }
 
+/* info */
 .container p {
   font-size: 14px;
   margin: 0;
