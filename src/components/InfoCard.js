@@ -6,9 +6,9 @@ import busy from '../assets/icon-busy.svg'
 
 export const InfoCard = ({ employee }) => {
 
-    // make phone numbers valid
-    // check for valid emails
-
+   // TODO: parse phone numbers to a unified format
+   // TODO: CSS changes when less than 4 searches appear
+  
     return (
         <div className={classes.card}>
             <div className={classes["image-container"]}>

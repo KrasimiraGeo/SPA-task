@@ -10,15 +10,14 @@ function App() {
 // passing the state to the Navbar so it can be lifted back up
 const [employees, setEmployees] = useState(data)
 
-// set the search query 
 const [searchQuery, setSearchQuery] = useState('')
 
-
-//TODO: check if there are present values in the employee object
-//TODO: implement filtering for every field of every employee
+// filtering trough the visible infpormation about each employee
 const filteredEmployees = employees.filter((employee) =>
 employee.firstName.toLowerCase().includes(searchQuery.toLowerCase()) ||
-employee.lastName.toLowerCase().includes(searchQuery.toLowerCase()))
+employee.lastName.toLowerCase().includes(searchQuery.toLowerCase()) ||
+employee.location?.toLowerCase().includes(searchQuery.toLocaleLowerCase()) //if location is NOT undefined it parses it; otherwise it is undefined;
+)
 
 
 //lifting the state up from the Navbar - Search query
@@ -31,3 +30,7 @@ employee.lastName.toLowerCase().includes(searchQuery.toLowerCase()))
 }
 
 export default App
+
+
+// ||
+// employee.location.split(', ').toLowerCase().includes(searchQuery.toLowerCase())
