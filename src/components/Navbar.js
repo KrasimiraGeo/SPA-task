@@ -9,7 +9,7 @@ export const Navbar = ({searchQuery, setSearchQuery}) => {
     //set the search input and lift it up to the App comp
     const searchInputHandler= (event) => {
         setSearchQuery(event.target.value)
-    };
+    }
 
     return (
         <nav className={classes.navbar}>

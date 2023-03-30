@@ -31,6 +31,3 @@ employee.location?.toLowerCase().includes(searchQuery.toLocaleLowerCase()) //if 
 
 export default App
 
-
-// ||
-// employee.location.split(', ').toLowerCase().includes(searchQuery.toLowerCase())
