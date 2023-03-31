@@ -2,18 +2,10 @@
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: flex-start;
     padding: 50px;
 }
 
-.card-container-dynamic{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 50px;
-}
 
 .message{
     display: flex;
@@ -26,7 +18,7 @@ h3{
     padding: 20px;
     border: 3px solid rgb(62, 197, 250);
     border-radius: 10px;
-    background-color: #3a3a3a61;
+    background-color: #747272b5;
 }
 
 @media only screen and (max-width: 768px) {

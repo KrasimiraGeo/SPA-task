@@ -6,11 +6,11 @@ import busy from '../assets/icon-busy.svg'
 
 export const InfoCard = ({ employee }) => {
 
-    // phone numbers to a unified format
+    // parse phone numbers to a unified format
     const regexp = new RegExp(/^(\d{3})(\d{3})(\d{4})$/)
     const phone = employee.phone.replace(/\D/g, '')  // digits only
     const formattedPhone = phone.replace(regexp, "+($1) $2 $3")
-  
+
     return (
         <div className={classes.card}>
             <div className={classes["image-container"]}>

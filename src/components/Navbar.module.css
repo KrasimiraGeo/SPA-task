@@ -1,15 +1,8 @@
-:root{
-    --navbar: #32BEE9;
-    --heading-text: white;
-    --background: #F2F2F2;
-
-}
-
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--navbar);
+    background-color: #32BEE9;
     height: 60px;
     padding: 10px 50px;
   }
@@ -17,7 +10,7 @@
   .navbar-brand {
     font-size: 20px;
     font-weight:500;
-    color: var(--heading-text);
+    color: white;
 
   }
   
@@ -28,6 +21,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 5px 10px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
   }
   
   .search-input {
@@ -39,7 +33,6 @@
   }
   
   .search-button {
-    /* background-color: #4CAF50; */
     color: white;
     border: none;
     border-radius: 5px;
@@ -47,4 +40,5 @@
     padding: 5px 10px;
     font-size: 16px;
     cursor: pointer;
+    background: none;
   }
